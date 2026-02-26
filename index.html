@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandan Restaurant</title>
+    <link rel="stylesheet" href="style.css" type="text/css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>     
+    <header>  
+        <nav>
+            <img src="Image/Logo.png" alt="Restaurant Logo">
+            <h3>Pandan Kitchen</h3>
+            <ul class="nav-links">
+                <li><a href="#Today_Special">Today Special</a></li>
+                <li id="dd_menu"><a href="#Menu">Menu <span id="downarrow">&#129171;</span></a>
+                    <ul>
+                        <li><a href="#Breakfast">Breakfast</a></li>
+                        <li><a href="#Meals">Meals</a></li>
+                        <li><a href="#Sides">Sides</a></li>
+                        <li><a href="#Drinks">Drinks</a></li>
+                    </ul>                    
+                </li>
+                <li><a href="#Aboutus">About Us</a></li>
+                <li><a href="#Contactus">Contact Us</a></li>
+                <li><a href="report.php" id="adminlogin">Admin Login</a></li>
+            </ul>
+        </nav>
+        <div class="content" id="content1"> 
+            <h1>Pandan <br>Kitchen</h1>
+            <p>Authentic Burmese flavors meet warmth, comfort, and <br> a taste you'll always remember</p>
+            <img src="Image/intro_image.jpg" alt="Pandan Restaurant" id="intro_img">
+        </div> 
+                
+    </header>   
+    <section>
+        <h1 id="Today_Special">Today Special</h1>
+        <div class="content" id="content2">         
+            <img src="Image/today_special.webp" alt="Lentil & Bean-thread Noodle Soup">
+            <div id="smenu_description">
+                <h2>Lentil & Bean-thread Noodle Soup</h2>
+                <p>A comforting bowl of lentil and bean-thread noodle soup, garnished with fresh herbs and a squeeze of lime. This traditional Burmese dish is perfect for a cozy meal.</p>
+                <h3>$8</h3>
+                <input type="button" value="Learn More" id="learn_more_btn">
+            </div>          
+        </div>
+        <h1 id="Menu">Menu</h1>              
+        <div class="content" id="content3"> 
+            <div id="Breakfast" >
+                <div class="left_menu">
+                    <h2>Breakfast</h2> 
+                    <p>Start your day with our delicious Burmese breakfast options,<br> featuring a variety of traditional dishes <br>that will energize you for the day ahead.</p>
+                </div>                
+                
+                <div class="right_item">
+                    <figure>
+                        <img src="Image/CoconutNoodles.webp" alt="Burmese Coconut Noodle Soup">
+                        <figcaption>Burmese Coconut Noodle Soup <br>$7</figcaption>
+                        <input type="button" value="Order Now">
+                    </figure>
+                    <figure>
+                        <img src="Image/Mohinga.webp" alt="Mohinga-Fish Noodle Soup">
+                        <figcaption>Mohinga-Fish Noodle Soup <br>$7</figcaption>
+                        <input type="button" value="Order Now">
+                    </figure>
+                    <figure>
+                        <img src="Image/NanGyiThoke.webp" alt="Nan Gyi Thoke- Thick Rick Noodle Salad">
+                        <figcaption>Nan Gyi Thoke- Thick Rick Noodle Salad <br>$7</figcaption>
+                        <input type="button" value="Order Now">
+                    </figure>
+                </div>
+            </div>            
+        </div>
+        <div class="content" id="content4">
+            <div id="Meals">
+                <div class="right_menu">
+                    <h2>Meals</h2>
+                    <p>Explore our diverse selection of Burmese meals, <br>crafted with authentic ingredients and traditional recipes <br>to bring you the true flavors of Myanmar.</p>
+                </div>                
+            </div>
+            <div class="left_item">
+                <figure>
+                    <img src="Image/prokcurry.webp" alt="Caramelized Pork Belly">
+                    <figcaption>Caramelized Pork Belly <br>$8</figcaption>
+                    <input type="button" value="Order Now">
+                </figure>
+                <figure>
+                    <img src="Image/vegetablestrew.webp" alt="Egg, Chickpea and Vegetable Stew">\
+                    <figcaption>Egg, Chickpea and Vegetable Stew <br>$7</figcaption>
+                    <input type="button" value="Order Now">
+                </figure>
+                <figure>
+                    <img src="Image/beef_stew.webp" alt="Good Ol' Beef Stew">
+                    <figcaption>Good Ol' Beef Stew <br>$8</figcaption>
+                    <input type="button" value="Order Now">
+            </div>
+        </div>
+        <div class="content" id="content5"> 
+            <div id="Sides" >
+                <div class="left_menu">
+                    <h2>Sides</h2>
+                    <p>Complement your meal with our selection of traditional Burmese sides,<br>perfectly paired to enhance your dining experience.</p>
+                </div>                
+                
+                <div class="right_item">
+                    <figure>
+                        <img src="Image/potatochip.webp" alt="Grandma's Burmese Potato Chips">
+                        <figcaption>Grandma's Burmese Potato Chips <br>$5</figcaption>
+                        <input type="button" value="Order Now">
+                    </figure>
+                    <figure>
+                        <img src="Image/H&W_snack.webp" alt="Husband and Wife Snack">
+                        <figcaption>Husband and Wife Snack<br>$5</figcaption>
+                        <input type="button" value="Order Now">
+                    </figure>
+                    <figure>
+                        <img src="Image/porkball.webp" alt="Burmese Pork Balls">
+                        <figcaption>Burmese Pork Balls <br>$6</figcaption>
+                        <input type="button" value="Order Now">
+                    </figure>
+                </div>
+            </div>            
+        </div>
+        <div class="content" id="content6">
+            <div id="Drinks">
+                <div class="right_menu">
+                    <h2>Drinks</h2>
+                    <p>Quench your thirst with our refreshing Burmese beverages,<br> including traditional teas, coffees, and more<p>                    
+                </div>                
+            </div>
+            <div class="left_item">
+                <figure>
+                    <img src="Image/Tea.webp" alt="Burmese Milk Tea">
+                    <figcaption>Burmese Milk Tea <br>$2</figcaption>
+                    <input type="button" value="Order Now">
+                </figure>
+                <figure>
+                    <img src="Image/Coffee.webp" alt="Burmese Coffee">
+                    <figcaption>Burmese Coffee <br>$2</figcaption>
+                    <input type="button" value="Order Now">
+                </figure>
+                <figure>
+                    <img src="Image/Milo_Dinosaur.webp" alt="Iced Milo Dinosaur">
+                    <figcaption>ced Milo Dinosaur <br>$2.5</figcaption>
+                    <input type="button" value="Order Now">
+            </div>
+        </div>
+        <h1 id="Aboutus">About Us</h1>
+        <div class="content" id="content7">           
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>
+                        Pandan Kitchen was born from a passion for sharing authentic Burmese flavors. 
+                        Every dish is crafted with love, inspired by recipes passed down through generations. 
+                        Our mission is to create a warm, welcoming space where food connects people 
+                        and brings comfort, just like home.
+                    </p>
+                    <p>
+                        From hearty soups to flavorful curries, we invite you to experience 
+                        the rich culinary traditions of Myanmar — made with fresh ingredients, 
+                        care, and a touch of Pandan magic.
+                    </p>
+                </div>
+                <div class="about-media">
+                    <video autoplay muted playsinline >
+                    <source src="Image/Maroon Gold Simple Elegant Restaurant Grand Opening Video.mp4" type="video/mp4">        
+                    </video>            
+                </div>
+            </div>
+        </div>
+        <h1 id="Contactus">Contact Us</h1>
+        <div class="content" id="content8">            
+            <p class="contact-intro">We'd love to hear your thoughts, suggestions, or feedback!</p>
+
+            <form class="suggestion-form" action="feedback.php" method="POST">
+                <!-- CSRF (security). Token is fetched from csrf.php using JS so you can keep this page as .html -->
+                <input type="hidden" name="csrf_token" id="csrf_token" value="">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone no:"  required>
+
+                <label for="message">Your Feedback</label>
+                <textarea id="message" name="message" placeholder="Write your feedback..." rows="5" required></textarea>
+
+                <label for="promotion">Do you want promotion?</label>
+                <Label for="promotionY">Yes</Label>
+                <input type="radio" id="promotionY" name="promotion" value="Y" required class="choice">
+                <label for="promotionN">No</label>
+                <input type="radio" id="promotionN" name="promotion" value="N" class="choice">
+                
+                <div id="optional">
+                    <label for="channel">Preferred Channel:</label>
+                    <label for="sms">SMS</label>              
+                    <input type="checkbox" id="sms" name="sms" value="Y" class="choice"> 
+                    <label for="whatsapp">WhatsApp</label>
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="Y" class="choice"> 
+                    <label for="emailch">Email</label>
+                    <input type="checkbox" id="emailch" name="emailch" value="Y" class="choice">
+                    
+                </div>
+                <button type="submit" id="button">Send Feedback</button>
+            </form>
+        </div>     
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p><strong>Pandan Kitchen</strong></p>
+            <p>&#x1F4CD;BLK 313, Ave 3, Ang Mo Kio</p>
+            <p>&#x1F4DE; +65 81422097</p>
+            <p>&#x2709;&#xFE0F; hello@pandankitchen.com</p>
+            <div class="social-links">
+                <a href="https://facebook.com" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="copyright">© 2025 Pandan Kitchen. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Fetch CSRF token (security) for feedback form
+        fetch('csrf.php')
+          .then(r => r.json())
+          .then(d => {
+            const el = document.getElementById('csrf_token');
+            if (el && d && d.csrf_token) el.value = d.csrf_token;
+          })
+          .catch(() => { /* ignore */ });
+
+        const promotionY = document.getElementById('promotionY');
+        const promotionN = document.getElementById('promotionN');
+        const optional = document.getElementById('optional');
+        const adminlogin = document.getElementById('adminlogin');
+        promotionY.addEventListener('change', function() {
+            if (this.checked) {
+                optional.style.display = 'block';
+            }
+        });
+
+        promotionN.addEventListener('change', function() {
+            if (this.checked) {
+                optional.style.display = 'none';
+            }
+        });
+
+        adminlogin.addEventListener('click', function(event) {
+            const password = prompt("Enter admin password:");
+            if (password !== "admin123") {
+                alert("Incorrect password. Access denied.");
+                event.preventDefault();
+            }
+        });
+        
+    </script>
+
+</body>
+</html>

@@ -1,11 +1,3 @@
-# Database Notes
-
-## SQL setup
-Use `sql/setup.sql` to create the database and table.
-
-If you want manual SQL:
-
-```sql
 CREATE DATABASE IF NOT EXISTS pandan_kitchen;
 USE pandan_kitchen;
 
@@ -21,15 +13,3 @@ CREATE TABLE IF NOT EXISTS Feedback (
     Channel_W CHAR(1) NOT NULL DEFAULT 'N',
     Channel_M CHAR(1) NOT NULL DEFAULT 'N'
 );
-```
-
-## Configuration
-Edit `includes/config.php` with your local credentials:
-- Host
-- Username
-- Password
-- Database name
-
-## Admin access note
-Current admin prompt in frontend uses password: `admin123`.
-For real projects, replace this with proper server-side authentication.

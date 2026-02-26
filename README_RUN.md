@@ -27,9 +27,43 @@ Edit `includes/config.php` if your MySQL settings differ:
 - `DB_PASS`
 - `DB_NAME`
 
-## 5) Open app
+## 5) Open app (default localhost)
 - Home: `http://localhost/PK_Restaurant/index.html`
 - Report: `http://localhost/PK_Restaurant/report.php`
+
+## 6) Run with a custom local domain (Apache)
+If you want to access the app like a real domain (for example `http://pandan-kitchen.local`), follow these steps.
+
+1. Copy `custom-domain.apache.conf` to your Apache virtual hosts folder.
+   - Linux (Apache): usually `/etc/apache2/sites-available/`
+   - XAMPP (Windows): usually `C:\xampp\apache\conf\extra\`
+
+2. Open the file and confirm `DocumentRoot` and `<Directory ...>` match your actual project path.
+
+3. Add a hosts file entry:
+   - Windows (`C:\Windows\System32\drivers\etc\hosts`)
+   - Linux/macOS (`/etc/hosts`)
+
+   Add this line:
+   ```
+   127.0.0.1 pandan-kitchen.local www.pandan-kitchen.local
+   ```
+
+4. Enable virtual hosts:
+   - Linux Apache:
+     ```bash
+     sudo a2ensite custom-domain.apache.conf
+     sudo systemctl reload apache2
+     ```
+   - XAMPP Apache:
+     - Ensure this line is enabled in `httpd.conf`:
+       `Include conf/extra/httpd-vhosts.conf`
+     - Paste the vhost content into `httpd-vhosts.conf`
+     - Restart Apache from XAMPP Control Panel
+
+5. Open the app using:
+   - Home: `http://pandan-kitchen.local/index.html`
+   - Report: `http://pandan-kitchen.local/report.php`
 
 ## Common issues
 1. **"Database connection failed"**
@@ -47,3 +81,8 @@ Edit `includes/config.php` if your MySQL settings differ:
 4. **CSV export downloads empty file**
    - Try report date range with data
    - Confirm rows exist in `Feedback` table
+
+5. **Custom domain does not open**
+   - Confirm hosts entry exists and has no typo
+   - Confirm Apache vhost file points to the correct path
+   - Restart Apache after changing vhost/hosts settings

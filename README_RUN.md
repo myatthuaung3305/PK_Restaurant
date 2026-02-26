@@ -1,11 +1,4 @@
-# Pandan Kitchen v2 (upgraded)
-
-## What changed (intern → junior)
-- ✅ Prepared statements (SQL injection protection)
-- ✅ Server-side validation
-- ✅ CSRF protection for feedback form
-- ✅ Admin login + dashboard (search, filters, pagination)
-- ✅ CSV export (public + admin)
+# Pandan Kitchen v2 
 
 ## How to run (XAMPP)
 1. Copy **PandanKitchen_v2** folder into `C:\xampp\htdocs\PandanKitchen_v2`

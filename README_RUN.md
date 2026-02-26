@@ -1,18 +1,49 @@
-# Pandan Kitchen v2 
+# Run Guide (XAMPP / Local PHP)
 
-## How to run (XAMPP)
-1. Copy **PandanKitchen_v2** folder into `C:\xampp\htdocs\PandanKitchen_v2`
-2. Start **Apache** + **MySQL** in XAMPP.
-3. Create DB + tables:
-   - Open phpMyAdmin → **SQL** tab → run `sql/setup.sql`
-4. If your MySQL username/password/database is different:
-   - Edit `includes/config.php`
+## 1) Place project in web root
+Copy project folder to:
+- **Windows/XAMPP:** `C:\xampp\htdocs\PK_Restaurant`
+- **Linux (Apache):** `/var/www/html/PK_Restaurant`
 
-## URLs
-- Website: `http://localhost/PandanKitchen_v2/index.html`
-- Public Report: `http://localhost/PandanKitchen_v2/report.php`
-- Admin Login: `http://localhost/PandanKitchen_v2/admin/login.php`
+## 2) Start services
+Start:
+- Apache
+- MySQL
 
-## Admin account
-- username: `admin`
-- password: `Admin@123`
+## 3) Create database and table
+Option A (recommended):
+1. Open phpMyAdmin
+2. Click **Import**
+3. Import `sql/setup.sql`
+
+Option B (manual):
+1. Open SQL tab in phpMyAdmin
+2. Paste SQL from `sql/setup.sql`
+
+## 4) Configure DB credentials
+Edit `includes/config.php` if your MySQL settings differ:
+- `DB_HOST`
+- `DB_USER`
+- `DB_PASS`
+- `DB_NAME`
+
+## 5) Open app
+- Home: `http://localhost/PK_Restaurant/index.html`
+- Report: `http://localhost/PK_Restaurant/report.php`
+
+## Common issues
+1. **"Database connection failed"**
+   - Check MySQL is running
+   - Verify values in `includes/config.php`
+   - Ensure DB name exists and table was created
+
+2. **CSRF token error**
+   - Ensure PHP sessions are enabled
+   - Allow browser cookies on localhost
+
+3. **Images not showing**
+   - Ensure `Image/` folder exists in project root
+
+4. **CSV export downloads empty file**
+   - Try report date range with data
+   - Confirm rows exist in `Feedback` table

@@ -88,3 +88,9 @@ php artisan serve --host=127.0.0.1 --port=8090
 - `php -l` checked updated PHP files
 - `php artisan view:cache` passed
 - `php artisan test` passed
+
+## Deployment
+
+- `Dockerfile` and `entrypoint.sh` are included for container-based hosting
+- The container uses SQLite by default and runs migrations on startup
+- Set `APP_URL` and any production env values on your hosting platform
